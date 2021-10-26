@@ -1,108 +1,187 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Build Lab
+Phillip Healy's Milestone Project 4: Full Stack Frameworks with Django. 
+The Build Lab is a website for people to come and learn about various deck building games. From Collectable Trading Card Games like Magic The Gathering, Yu-gi-oh, etc. To Living Card Games like Android: Netrunner. I'm obscessed with building decks and putting together strategy for a competitive edge, fun deck techs, or pure casual fun.
 
-Welcome Phillip-Healy,
+For this project I thought a site centered around my love of card games, showing off some free advice and entertaining opinions on the games that are out there, as well as some content locked behind a paywall for more serious enthusiasts would be perfect.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+I went into this with so little time for many reasons, but worked myself to the bone to get it done and have something I can be proud of.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+## Brief
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Project purpose: 
 
-`python3 -m http.server`
+In this project, you'll build a full-stack site based around business logic used to control a centrally-owned dataset. You will set up an authentication mechanism and provide paid access to the site's data and/or other activities based on the dataset, such as the purchase of a product/service. 
 
-A blue button should appear to click: _Make Public_,
+### Value provided: 
 
-Another blue button should appear to click: _Open Browser_.
+1. By authenticating on the site and paying for some of its services, users can advance their own goals. Before authenticating, the site makes it clear how those goals would be furthered by the site. 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+2. The site owner is able to make money by providing this set of services to the users. There is no way for a regular user to bypass the site's mechanisms and derive all of the value available to paid users without paying. 
 
-A blue button should appear to click: _Make Public_,
+### Project Requirements 
 
-Another blue button should appear to click: _Open Browser_.
+#### Main Technologies 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+HTML, CSS, JavaScript, Python+Django 
 
-To log into the Heroku toolbelt CLI:
+Relational database (recommending MySQL or Postgres) 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Stripe payments 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Additional libraries and APIs 
 
-------
+#### Mandatory Requirements 
 
-## Release History
+A project violating any of these requirements will FAIL: 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Django Full Stack Project: Build a Django project backend by a relational database to create a website that allows users to store and manipulate data records about a particular domain. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- Multiple Apps: The project must be a brand new Django project, composed of multiple apps (an app for each potentially reusable component in your project). 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Data Modeling: Put some effort into designing a relational database schema well-suited for your domain. Make sure to put some thought into the relationships between entities. Create at least 2 custom django models beyond the examples shown on the course (changing the field names of the miniproject models is not customisation) 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- User Authentication: The project should include an authentication mechanism, allowing a user to register and log in, and there should be a good reason as to why the users would need to do so. e.g., a user would have to register to persist their shopping cart between sessions (otherwise it would be lost). 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- User Interaction: Include at least one form with validation that will allow users to create and edit models in the backend (in addition to the authentication mechanism). 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- Use of Stripe: At least one of your Django apps should contain some e-commerce functionality using Stripe. This may be a shopping cart checkout or single payments, or donations, etc. After paying successfully, the user would then gain access to additional functionality/content on the site. Note that for this project you should use Stripe's test functionality, rather than actual live payments. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Structure and Navigation: Incorporate a main navigation menu and structured layout (you might want to use Bootstrap to accomplish this). 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Use of JavaScript: The frontend should contain some JavaScript logic you have written to enhance the user experience. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- Documentation: Write a README.md file for your project that explains what the project does and the value that it provides to its users. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- Version Control: Use Git & GitHub for version control. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- Attribution: Maintain clear separation between code written by you and code from external sources (e.g. libraries or tutorials). Attribute any code from external sources to its source via comments above the code and (for larger dependencies) in the README. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Deployment: Deploy the final version of your code to a hosting platform such as Heroku. 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- Security: Make sure to not include any passwords or secret keys in the project repository. Make sure to turn off the Django DEBUG mode, which could expose secrets. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## UX
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### User Stories
 
-------
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+### Design
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+[Wireframes]()
 
-**How will this affect me?**
+[Schema]()
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+I chose to have the site be open and clean to maintain a great user experience. Keeping focus on the content the user has come for, while providing easy navigation
+to and from every part of the site. I went with a healthy green colour which is traditionally associated with the environment and success.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+For the font I chose Poppins; a free Google Font. Poppins is an internationalist take on geometric sans. Each letterform is nearly monolinear, 
+with optical corrections applied to stroke joints where necessary to maintain an even typographic color. The Devanagari base character height and the Latin ascender height are equal; Latin capital letters are shorter than the Devanagari characters, and the Latin x-height is set rather high (https://fonts.google.com/specimen/Poppins#about).
+I found this Font to be clean and clear at all font-weights, which is what I wanted in my consistent vision across the site.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Features
 
-**So….?**
+### Existing Features
+- A front page featuring latest news and spotlights on top 3 games.
+- A page to see all games that have been reviewed on the site.
+- A genres page to see the games in each genre.
+- A review page to see each review.
+- A log in/register page to become a user of the site.
+- A profile page to show the reviews you've already left and allow you to edit/delete them.
+- A form to add games, and reviews for those games.
+- Have search bar for games, genres, reviews based on different terms.
+- A logout button to see the site as a non-registered user or if you computer share etc.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Future Features
+- Affinity links on the games to earn money for site upkeep/future projects.
+- Link to all games of a certain genre etc. when a user clicks on it.
 
-**Can I opt out?**
+## Technologies Used
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Python
+- Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. 
+ Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code. (https://pythonbasics.org/)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Django
+- Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. (https://www.djangoproject.com/)
 
-**Anything more?**
+### Jinja
+- Jinja2 is one of the most used template engines for Python. It is inspired by Django's templating system but extends it with an expressive language that gives 
+ template authors a more powerful set of tools. (https://www.palletsprojects.com/p/jinja/)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Werkzeug 
+- Werkzeug is a comprehensive WSGI web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the
+ most advanced WSGI utility libraries. Flask wraps Werkzeug, using it to handle the details 
+ of WSGI while providing more structure and patterns for defining powerful applications. (https://www.palletsprojects.com/p/werkzeug/)
 
----
+### Bootstrap
+- Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. (https://www.w3schools.com/whatis/whatis_bootstrap.asp)
 
-Happy coding!
+### Balsamiq
+- Balsamiq Wireframes is a rapid low-fidelity UI wireframing tool that reproduces the experience of sketching on a notepad or whiteboard, but using a computer. (https://balsamiq.com/wireframes/)
+
+### Font Awsome
+- Font Awesome is a font and icon toolkit based on CSS and Less. (https://fontawesome.com)
+
+## Testing
+
+
+
+### Bugs Encountered
+
+
+## Deployment
+
+1. Create repo "cardboard_craic" on Github based on Code-institute template.
+
+2. Open workspace on Gitpod.
+
+3. Install: updated pip, Flask, flask-pymongo, dnspython.
+
+4. Create environments file env.py, and add this (and pycache) to gitignore for security.
+
+5. create requirements.txt with pip3 freeze, create Procfile.
+
+6. Log into MongoDB, join free cluster.
+
+7. Create database cardboard_craic on free cluster.
+
+8. Create collections on this database: games, genres, users, reviews as per schema.
+
+9. Insert initial documents to these collections to test connectivity etc.
+
+10. Back on Gitpod workspace create app.py and wire it up to the env.py.
+
+11. Create first @app.route("/") and define a test page.
+
+12. Go to Heroku.com and log in.
+
+13. Create app cardboard_craic.
+
+14. Go to Deploy and click deploy via Github. 
+
+15. Put in Github username and repo name, make sure the correct repo opens.
+
+16. Go to settings and click Reveal Config Vars. Add all info from env.py to this as it won't be picked up through Github (gitignore).
+
+17. Back to deploy page click "Automatically deploy from branch: Master".
+
+18. Wait to see this light up green. 
+
+19. You can now "Open App" and will see the test page you created.
+
+20. Live app:  
+
+## Credits
+
+### Content
+- Back to top button modified from code taken from https://www.templatemonster.com/blog/back-to-top-button-css-jquery/
+Window height calculations modified from http://martinpennock.com/blog/force-footer-bottom-page-css/
+
+### Media
+- Page logo designed and created by me on https://sketch.io/sketchpad/
+- Schema created on https://draw.io/app.diagrams/
+
+### Acknowledgements
+Thank you to my wife and friends who tested the site during development.
