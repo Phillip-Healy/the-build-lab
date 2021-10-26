@@ -65,7 +65,13 @@ A project violating any of these requirements will FAIL:
 
 ### User Stories
 
-
+- As a gamer I would like to see a collection of card games to play.
+- As a boardgame enthusiast I would like to see entertaining opinions on various card games.
+- As a casual Yu-gi-oh player I want to see if there's some tips on improving.
+- As a professional Magic The Gathering player I want to see what others are doing with the new cards.
+- As a competitive player I would like to see what game might be right for me to jump into.
+- As a hobbyist I'd love to find out news about new cards and how they might change the current meta-game.
+- As a fan I want to be able to register and support the site.
 
 ### Design
 
