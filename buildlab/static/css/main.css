@@ -30,6 +30,7 @@ h1,h2,h3,h4,h5,h6{
 	font-size: 14px;
 }
 
+/* Product Preview */
 .box-element{
 	box-shadow:hsl(0, 0%, 80%) 0 0 16px;
 	background-color: #fff;
@@ -37,12 +38,19 @@ h1,h2,h3,h4,h5,h6{
 	padding: 10px;
 }
 
+/* Product Description */
 .thumbnail{
 	width: 100%;
 	height: 200px;
 	-webkit-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
     -moz-box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
     box-shadow: -1px -3px 5px -2px rgba(214,214,214,1);
+}
+
+/* Product Price */
+.price{
+    display: inline-block;
+    float: right;
 }
 
 .product{
