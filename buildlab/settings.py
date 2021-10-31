@@ -127,6 +127,10 @@ STATICFILES_DIRS = [
     "/workspace/the-build-lab/buildlab/static/images",
 ]
 
+MEDIA_URL = '/images/'
+
+MEDIA_ROOT = "/workspace/the-build-lab/buildlab/static/images"
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
