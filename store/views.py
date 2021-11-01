@@ -52,4 +52,14 @@ def updateItem(request):
 
     orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
 
+    if action == 'add':
+        orderItem.quantity += 1
+    elif action == 'remove':
+        orderItem -+ 1
+    
+    orderItem.save()
+
+    if orderItem.quantity <= 0:
+        orderItem.delete()
+
     return JsonResponse('Item added to cart!', safe=False)

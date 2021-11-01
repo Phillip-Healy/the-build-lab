@@ -154,6 +154,14 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 - Django docs had a JS script to sort this out by getting the cookie csrftoken and passing it through to the request handler.
 
+- Request to pass data to backend is coming up with error saying "WSGIRequest object has no attribute 'data'"
+
+![Screenshot of error](buildlab/buildfiles/screenshots/data_error.png "no attribute 'data'")
+
+- Changed to "data = json.loads(request.body)" and the request sent successfully.
+
+
+
 ## Deployment
 
 1. Create repo "cardboard_craic" on Github based on Code-institute template.
