@@ -142,6 +142,17 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ### Bugs Encountered
 
+- While creating JS logic for event handlers to add items to cart on store page. Continually got error 'synthax error, unexpected identifier' to the console.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/syntax_error_1.png "JS logic syntax error")
+
+- I had a colon in the wrong place, this took too long to find for such a small issue!
+
+- While trying to update cart with JSON fetch I was running into CSRF (Cross Site Request Forgery protection) token error on both the console and terminal.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/csrf_token_error.png "CSRF token error")
+
+- Django docs had a JS script to sort this out by getting the cookie csrftoken and passing it through to the request handler.
 
 ## Deployment
 
@@ -190,6 +201,10 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 ### Content
 - Back to top button modified from code taken from https://www.templatemonster.com/blog/back-to-top-button-css-jquery/
 Window height calculations modified from http://martinpennock.com/blog/force-footer-bottom-page-css/
+
+- checkout buttons and logic modified from https://codewithsteps.herokuapp.com/part/58e22993-f5a4-4ed7-92df-aede6711bf69/
+
+- Script to generate CSRF token taken from https://docs.djangoproject.com/en/3.2/ref/csrf/
 
 ### Media
 - Page logo designed and created by me on https://sketch.io/sketchpad/
