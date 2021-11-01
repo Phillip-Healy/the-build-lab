@@ -160,7 +160,11 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 - Changed to "data = json.loads(request.body)" and the request sent successfully.
 
+- Buttons on cart page wired to add/remove quantity on click event. Giving error of unexpected token on JSON line 0.
 
+![Screenshot of error](buildlab/buildfiles/screenshots/update_cart_error.png "unexpected token on JSON")
+
+- Fixed syntax error by changing sign on remove portion which was trying to add and subtract simultaniously.
 
 ## Deployment
 
