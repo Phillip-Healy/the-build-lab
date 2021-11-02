@@ -111,6 +111,7 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ### Rest
 - Django REST framework is a powerful and flexible toolkit for building Web APIs.
+-- Using rest API token authentication for secure authentication and validation via tokens.
 
 ### Werkzeug 
 - Werkzeug is a comprehensive WSGI web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the
