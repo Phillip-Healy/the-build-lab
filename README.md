@@ -118,9 +118,8 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 ### Pillow 
 - The Python Imaging Library adds image processing capabilities to your Python interpreter. This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities. The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.
 
-### Jinja
-- Jinja2 is one of the most used template engines for Python. It is inspired by Django's templating system but extends it with an expressive language that gives 
- template authors a more powerful set of tools. (https://www.palletsprojects.com/p/jinja/)
+### Rest
+- Django REST framework is a powerful and flexible toolkit for building Web APIs.
 
 ### Werkzeug 
 - Werkzeug is a comprehensive WSGI web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the
