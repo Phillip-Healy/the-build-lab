@@ -166,6 +166,18 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 - Fixed syntax error by changing sign on remove portion which was trying to add and subtract simultaniously.
 
+- JSON syntax error after putting in new cookie script.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/JSON_error.png "SyntaxError: Unexpected identifier")
+
+- Missed out on a + which meant script was not concatinating the string, crashing the script.
+
+- Cart kept crashing as I tried to add info from the cookies to the page.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/cart_keyerror.png "KeyError at /cart/")
+
+- Setting up a try/except with some temp data allowed the page to load with the correct data once it was fully loaded.
+
 ## Deployment
 
 1. Create repo "cardboard_craic" on Github based on Code-institute template.
@@ -217,6 +229,8 @@ Window height calculations modified from http://martinpennock.com/blog/force-foo
 - checkout buttons and logic modified from https://codewithsteps.herokuapp.com/part/58e22993-f5a4-4ed7-92df-aede6711bf69/
 
 - Script to generate CSRF token taken from https://docs.djangoproject.com/en/3.2/ref/csrf/
+
+- Script to generate cookie to store session data modified from above by divanov11 on Github https://github.com/divanov11/ecom_steps/blob/master/m4-p1-s1-setcookies.html
 
 ### Media
 - Page logo designed and created by me on https://sketch.io/sketchpad/
