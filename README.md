@@ -89,19 +89,10 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 ## Features
 
 ### Existing Features
-- A front page featuring latest news and spotlights on top 3 games.
-- A page to see all games that have been reviewed on the site.
-- A genres page to see the games in each genre.
-- A review page to see each review.
-- A log in/register page to become a user of the site.
-- A profile page to show the reviews you've already left and allow you to edit/delete them.
-- A form to add games, and reviews for those games.
-- Have search bar for games, genres, reviews based on different terms.
-- A logout button to see the site as a non-registered user or if you computer share etc.
+
 
 ### Future Features
-- Affinity links on the games to earn money for site upkeep/future projects.
-- Link to all games of a certain genre etc. when a user clicks on it.
+
 
 ## Technologies Used
 
@@ -113,7 +104,7 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. (https://www.djangoproject.com/)
 
 ### SQLite
-
+- SQLite is a relational database management system contained in a C library. In contrast to many other database management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program. SQLite generally follows PostgreSQL syntax.
 
 ### Pillow 
 - The Python Imaging Library adds image processing capabilities to your Python interpreter. This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities. The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.
@@ -140,6 +131,8 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 
 ### Bugs Encountered
+
+- Had pushed to github with secret key exposed in settings.py. Fixed this by linking to a .git-ignored file with a new secure key.
 
 - While creating JS logic for event handlers to add items to cart on store page. Continually got error 'synthax error, unexpected identifier' to the console.
 
