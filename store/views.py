@@ -4,7 +4,12 @@ import json
 import datetime
 from .models import *
 
+# from rest_framework.authtoken.models import Token
+
 # Create your views here.
+
+
+# token = Token.objects.get(user=account).key    data['token'] = token
 
 
 def store(request):
