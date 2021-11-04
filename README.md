@@ -77,14 +77,40 @@ A project violating any of these requirements will FAIL:
 
 ### Design
 
-[Wireframes]()
+#### Wireframes
 
+##### Mobile Pages
+
+- Mobile Home
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-mobile-home.png "Mobile - Home")
+
+- Mobile News
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-mobile-news.png "Mobile - News")
+
+- Mobile Store
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-mobile-store.png "Mobile - Store")
+
+- Mobile Content
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-mobile-content.png "Mobile - Content")
+
+##### Desktop Pages
+
+- Desktop Home
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-desktop-home.png "Desktop - Home")
+
+- Desktop News
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-desktop-news.png "Desktop - News")
+
+- Desktop Store
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-desktop-store.png "Desktop - Store")
+
+- Desktop Content
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-desktop-content.png "Desktop - Content")
 #### Schema
 
 ![Screenshot of Database Relationship Schema](buildlab/buildfiles/screenshots/DBRS.png "Database Relationship Schema")
 
-I chose to have the site be open and clean to maintain a great user experience. Keeping focus on the content the user has come for, while providing easy navigation
-to and from every part of the site. I went with a healthy green colour which is traditionally associated with the environment and success.
+I chose to have the site be open and clean to maintain a great user experience. Keeping focus on the content the user has come for, while providing easy navigation to and from every part of the site. I chose a calm blue as my base palette as this represents wisdom and kindness, being complimented by orange which alludes to encouragement and motivation. This combination is perfect for a teaching platform which is centered around fun and learning.
 
 For the font I chose Poppins; a free Google Font. Poppins is an internationalist take on geometric sans. Each letterform is nearly monolinear, 
 with optical corrections applied to stroke joints where necessary to maintain an even typographic color. The Devanagari base character height and the Latin ascender height are equal; Latin capital letters are shorter than the Devanagari characters, and the Latin x-height is set rather high (https://fonts.google.com/specimen/Poppins#about).
