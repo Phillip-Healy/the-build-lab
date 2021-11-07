@@ -4,6 +4,8 @@ The Build Lab is a website for people to come and learn about various deck build
 
 For this project I thought a site centered around my love of card games, showing off some free advice and entertaining opinions on the games that are out there, as well as some content locked behind a paywall for more serious enthusiasts would be perfect.
 
+At a cretain point I realised my scope and content had gotten bloated and many things were not working. I tried to go to previous points in the version control and nothing ever felt right. I started again and used what I could to rebuild and get to a much cleaner more planned and directly designed place. This was a difficult and stressful desision, but I feel this paid off. I stuck with the same repo to preserve record of the work I had put in.
+
 I went into this with so little time for many reasons, but worked myself to the bone to get it done and have something I can be proud of.
 
 
@@ -75,12 +77,40 @@ A project violating any of these requirements will FAIL:
 
 ### Design
 
-[Wireframes]()
+#### Wireframes
 
-[Schema]()
+##### Mobile Pages
 
-I chose to have the site be open and clean to maintain a great user experience. Keeping focus on the content the user has come for, while providing easy navigation
-to and from every part of the site. I went with a healthy green colour which is traditionally associated with the environment and success.
+- Mobile Home
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-mobile-home.png "Mobile - Home")
+
+- Mobile News
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-mobile-news.png "Mobile - News")
+
+- Mobile Store
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-mobile-store.png "Mobile - Store")
+
+- Mobile Content
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-mobile-content.png "Mobile - Content")
+
+##### Desktop Pages
+
+- Desktop Home
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-desktop-home.png "Desktop - Home")
+
+- Desktop News
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-desktop-news.png "Desktop - News")
+
+- Desktop Store
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-desktop-store.png "Desktop - Store")
+
+- Desktop Content
+![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-desktop-content.png "Desktop - Content")
+#### Schema
+
+![Screenshot of Database Relationship Schema](buildlab/buildfiles/screenshots/DBRS.png "Database Relationship Schema")
+
+I chose to have the site be open and clean to maintain a great user experience. Keeping focus on the content the user has come for, while providing easy navigation to and from every part of the site. I chose a calm blue as my base palette as this represents wisdom and kindness, being complimented by orange which alludes to encouragement and motivation. This combination is perfect for a teaching platform which is centered around fun and learning.
 
 For the font I chose Poppins; a free Google Font. Poppins is an internationalist take on geometric sans. Each letterform is nearly monolinear, 
 with optical corrections applied to stroke joints where necessary to maintain an even typographic color. The Devanagari base character height and the Latin ascender height are equal; Latin capital letters are shorter than the Devanagari characters, and the Latin x-height is set rather high (https://fonts.google.com/specimen/Poppins#about).
@@ -89,19 +119,10 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 ## Features
 
 ### Existing Features
-- A front page featuring latest news and spotlights on top 3 games.
-- A page to see all games that have been reviewed on the site.
-- A genres page to see the games in each genre.
-- A review page to see each review.
-- A log in/register page to become a user of the site.
-- A profile page to show the reviews you've already left and allow you to edit/delete them.
-- A form to add games, and reviews for those games.
-- Have search bar for games, genres, reviews based on different terms.
-- A logout button to see the site as a non-registered user or if you computer share etc.
+
 
 ### Future Features
-- Affinity links on the games to earn money for site upkeep/future projects.
-- Link to all games of a certain genre etc. when a user clicks on it.
+
 
 ## Technologies Used
 
@@ -113,13 +134,14 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. (https://www.djangoproject.com/)
 
 ### SQLite
-
+- SQLite is a relational database management system contained in a C library. In contrast to many other database management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program. SQLite generally follows PostgreSQL syntax.
 
 ### Pillow 
 - The Python Imaging Library adds image processing capabilities to your Python interpreter. This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities. The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.
 
 ### Rest
 - Django REST framework is a powerful and flexible toolkit for building Web APIs.
+-- Using rest API token authentication for secure authentication and validation via tokens.
 
 ### Werkzeug 
 - Werkzeug is a comprehensive WSGI web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the
@@ -140,6 +162,8 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 
 ### Bugs Encountered
+
+- Had pushed to github with secret key exposed in settings.py. Fixed this by linking to a .git-ignored file with a new secure key.
 
 - While creating JS logic for event handlers to add items to cart on store page. Continually got error 'synthax error, unexpected identifier' to the console.
 
