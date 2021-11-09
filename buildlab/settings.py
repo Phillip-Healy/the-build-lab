@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'store.apps.StoreConfig',
     'rest_framework',
     'rest_framework.authtoken',
 ]
@@ -86,7 +85,7 @@ WSGI_APPLICATION = 'buildlab.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME':'qjdkxkrv',
+        'NAME': 'qjdkxkrv',
         'USER': 'qjdkxkrv',
         'PASSWORD': SQL_PASSWORD,
         'HOST': 'tai.db.elephantsql.com',
