@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from .secrets import SUPER_SECRET_KEY
+from .secrets import SUPER_SECRET_KEY, SQL_PASSWORD
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -85,8 +85,12 @@ WSGI_APPLICATION = 'buildlab.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'qjdkxkrv',
+        'USER': 'qjdkxkrv',
+        'PASSWORD': SQL_PASSWORD,
+        'HOST': 'tai.db.elephantsql.com',
+        'PORT': '',
     }
 }
 
