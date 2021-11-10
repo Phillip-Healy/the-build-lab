@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # rest API
     'rest_framework',
     'rest_framework.authtoken',
+    # Our Apps
+    'news.apps.NewsConfig',
 ]
 
 REST_FRAMEWORK = {

@@ -4,7 +4,7 @@ The Build Lab is a website for people to come and learn about various deck build
 
 For this project I thought a site centered around my love of card games, showing off some free advice and entertaining opinions on the games that are out there, as well as some content locked behind a paywall for more serious enthusiasts would be perfect.
 
-At a cretain point I realised my scope and content had gotten bloated and many things were not working. I tried to go to previous points in the version control and nothing ever felt right. I started again and used what I could to rebuild and get to a much cleaner more planned and directly designed place. This was a difficult and stressful desision, but I feel this paid off. I stuck with the same repo to preserve record of the work I had put in.
+At a certain point I realised my scope and content had gotten bloated and many things were not working. I tried to go to previous points in the version control and nothing ever felt right. I started again and used what I could to rebuild and get to a much cleaner more planned and directly designed place. This was a difficult and stressful desision, but I feel this paid off. I stuck with the same repo to preserve record of the work I had put in.
 
 I went into this with so little time for many reasons, but worked myself to the bone to get it done and have something I can be proud of.
 
@@ -109,6 +109,10 @@ A project violating any of these requirements will FAIL:
 #### Schema
 
 ![Screenshot of Database Relationship Schema](buildlab/buildfiles/screenshots/DBRS.png "Database Relationship Schema")
+
+- Original schema was for a pay per season model where users would pay for the content they wanted and leave what they didn't. This made less sense as I continued building, because I'd like to encourage people to try more games, not just the ones they're used to. So a pay once and unlock everything model appealed to me way more:
+
+![Screenshot of Database Relationship Schema](buildlab/buildfiles/screenshots/DBRS2.png "Update Database Relationship Schema")
 
 I chose to have the site be open and clean to maintain a great user experience. Keeping focus on the content the user has come for, while providing easy navigation to and from every part of the site. I chose a calm blue as my base palette as this represents wisdom and kindness, being complimented by orange which alludes to encouragement and motivation. This combination is perfect for a teaching platform which is centered around fun and learning.
 
