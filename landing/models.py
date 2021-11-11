@@ -5,7 +5,7 @@ from django.urls import reverse  # Used to generate URLs by reversing
 class Customer(models.Model):
     """ Model representing users on the system """
     name = models.CharField(max_length=40, help_text='Please Enter Your Name:')
-    email = models.EmailField(max_length=100, null=True)
+    email = models.EmailField(max_length=100)
     premium = models.BooleanField()
 
     def __str__(self):
@@ -14,6 +14,7 @@ class Customer(models.Model):
     def get_absolute_url(self):
         """Returns the url to access a detail record for this User."""
         return reverse('User-detail', args=[str(self.id)])
+
 
 class Payment(models.Model):
     """ Model for tracking and storing payments """
