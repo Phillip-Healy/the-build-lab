@@ -5,7 +5,7 @@ from django.urls import reverse  # Used to generate URLs by reversing
 class Customer(models.Model):
     """ Model representing users on the system """
     name = models.CharField(max_length=40, help_text='Please Enter Your Name:')
-    email = models.EmailField(max_length=100)
+    email = models.EmailField(max_length=100, null=True)
     premium = models.BooleanField()
 
     def __str__(self):

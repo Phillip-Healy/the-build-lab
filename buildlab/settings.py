@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     # Our Apps
-    'news.apps.LandingConfig',
+    'landing.apps.LandingConfig',
 ]
 
 REST_FRAMEWORK = {
