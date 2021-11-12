@@ -16,3 +16,11 @@ body{
 	color: #FFAAAA;
 }
 
+.nav-page {
+	transition: all 0.5s;
+}
+
+.nav-page:hover {
+	background-color: #550000;
+	color: #FFAAAA;
+}
