@@ -40,7 +40,7 @@
                     <a href="{% url 'games' %}" class="btn btn-warning nav-page">Games</a>
                     <a href="{% url 'premium' %}" class="btn btn-warning nav-page">Premium</a>
                     <a href="#" class="btn btn-warning nav-page">Register</a>
-                    <a href="#" class="btn btn-warning nav-page">Login</a>
+                    <a href="{% url 'login' %}" class="btn btn-warning nav-page">Login</a>
                     <a href="#" class="btn btn-warning nav-page">Log Out</a>
                 </div>
 
@@ -49,7 +49,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div id="content-wrapper" class="container col-6">
         <br>
         {% block content %}
 
