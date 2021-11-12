@@ -6,4 +6,5 @@ __pycache__/
 *.py[cod]
 node_modules/
 .github/
-.secrets.py
+secrets.py
+/workspace/the-build-lab/buildlab/secrets.py

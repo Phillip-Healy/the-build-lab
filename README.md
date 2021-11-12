@@ -4,7 +4,7 @@ The Build Lab is a website for people to come and learn about various deck build
 
 For this project I thought a site centered around my love of card games, showing off some free advice and entertaining opinions on the games that are out there, as well as some content locked behind a paywall for more serious enthusiasts would be perfect.
 
-At a cretain point I realised my scope and content had gotten bloated and many things were not working. I tried to go to previous points in the version control and nothing ever felt right. I started again and used what I could to rebuild and get to a much cleaner more planned and directly designed place. This was a difficult and stressful desision, but I feel this paid off. I stuck with the same repo to preserve record of the work I had put in.
+At a certain point I realised my scope and content had gotten bloated and many things were not working. I tried to go to previous points in the version control and nothing ever felt right. I started again and used what I could to rebuild and get to a much cleaner more planned and directly designed place. This was a difficult and stressful desision, but I feel this paid off. I stuck with the same repo to preserve record of the work I had put in.
 
 I went into this with so little time for many reasons, but worked myself to the bone to get it done and have something I can be proud of.
 
@@ -110,6 +110,10 @@ A project violating any of these requirements will FAIL:
 
 ![Screenshot of Database Relationship Schema](buildlab/buildfiles/screenshots/DBRS.png "Database Relationship Schema")
 
+- Original schema was for a pay per season model where users would pay for the content they wanted and leave what they didn't. This made less sense as I continued building, because I'd like to encourage people to try more games, not just the ones they're used to. So a pay once and unlock everything model appealed to me way more:
+
+![Screenshot of Database Relationship Schema](buildlab/buildfiles/screenshots/DBRS2.png "Update Database Relationship Schema")
+
 I chose to have the site be open and clean to maintain a great user experience. Keeping focus on the content the user has come for, while providing easy navigation to and from every part of the site. I chose a calm blue as my base palette as this represents wisdom and kindness, being complimented by orange which alludes to encouragement and motivation. This combination is perfect for a teaching platform which is centered around fun and learning.
 
 For the font I chose Poppins; a free Google Font. Poppins is an internationalist take on geometric sans. Each letterform is nearly monolinear, 
@@ -134,7 +138,16 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. (https://www.djangoproject.com/)
 
 ### SQLite
-- SQLite is a relational database management system contained in a C library. In contrast to many other database management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program. SQLite generally follows PostgreSQL syntax.
+- SQLite is a relational database management system contained in a C library. In contrast to many other database management systems, SQLite is not a client–server database engine. Rather, it is embedded into the end program. SQLite generally follows PostgreSQL syntax. SQLite 3 was used for testing and early work in this project.
+
+### PostgreSQL
+- PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance. It was originally named POSTGRES, referring to its origins as a successor to the Ingres database developed at the University of California, Berkeley. (https://mp.s81c.com/pwb-production/000001-partner/78/documentation/6253_en.pdf)
+
+### ElephantSQL
+- ElephantSQL will manage administrative tasks of PostgreSQL, such as installation, upgrades to latest stable version and backup handling. ElephantSQL is also integrated to several cloud application platforms (also known as PaaS). (https://mp.s81c.com/pwb-production/000001-partner/78/documentation/6253_en.pdf)
+
+### Heroku
+- Heroku is a cloud platform as a service supporting several programming languages. One of the first cloud platforms, Heroku has been in development since June 2007, when it supported only the Ruby programming language, but now supports Java, Node.js, Scala, Clojure, Python, PHP, and Go. (https://www.heroku.com/)
 
 ### Pillow 
 - The Python Imaging Library adds image processing capabilities to your Python interpreter. This library provides extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities. The core image library is designed for fast access to data stored in a few basic pixel formats. It should provide a solid foundation for a general image processing tool.
