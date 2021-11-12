@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import os
 from pathlib import Path
 from .secrets import SUPER_SECRET_KEY, SQL_PASSWORD
 
@@ -67,7 +66,10 @@ ROOT_URLCONF = 'buildlab.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [
+            BASE_DIR / "templates",
+            "/workspace/the-build-lab/templates/registration/",
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -151,3 +153,7 @@ MEDIA_ROOT = "/workspace/the-build-lab/buildlab/static/images"
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Redirect to home URL after login (Default redirects to /accounts/profile/)
+LOGIN_REDIRECT_URL = '/'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
