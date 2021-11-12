@@ -5,10 +5,11 @@
 
 {% for content in contents %}
     <div class="card mb-3">
-        <img src="{{ content.image.url }}" class="card-img-top" alt="{{ content.name }} image">
+        <img src="{{ content.image.url }}" id="premium-img" class="card-img-top" alt="{{ content.name }} image">
         <div class="card-body">
-        <h5 class="card-title">{{ content.name }}</h5>
-        <p class="card-text">{{ content.description }}</p>
+        <h5 id="premium-title" class="card-title"><strong>{{ content.name }}</strong></h5>
+        <hr>
+        <p id="premium-text" class="card-text">{{ content.description|linebreaks }}</p>
         </div>
     </div>
 {% endfor %}

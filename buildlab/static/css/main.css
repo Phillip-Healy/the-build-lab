@@ -132,5 +132,12 @@ body{
 
 /* ------------------------------- premium */
 
+#premium-img {
+	height: 450px;
+}
+
+#premium-text {
+	font-size: 18px;
+}
 
 /* ------------------------------- register/log in/out */
