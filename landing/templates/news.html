@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{% static '/images/mtg-news.jpeg' %}" class="img-fluid rounded-start" alt="magic the gathering">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">Magic The Gathering</h5>
+                <p class="card-text">For nearly three decades, the card game Magic: The Gathering has offered a popular escape for the young and 
+                    young at heart.
+
+                    Players acting as powerful wizards called Planeswalkers battle it out by drawing powerful spells and creatures to beat 
+                    the opponent. From its inception, most of those Planeswalkers have been white characters — until now.
+                    
+                    Magic: The Gathering is exploring Black life through a set of new cards called Black Is Magic.
+                    <br>
+                    <br>
+                    “You don’t have to be Black to enjoy Black stories,” Sydney Adams, the lead designer of the set, says. “Black stories 
+                    are human stories, and human stories deserve to be told.”
+                    
+                    Adams was initially drawn to the Magic: The Gathering when she saw the image of Kaya, the game’s first Black woman 
+                    Planeswalker, in 2016.
+                    <br>
+                    <br>
+                    “At that point, a lot of the games that I had been looking at didn't really have that many Black female characters that 
+                    seemed confident or even were just sort of visible,” she says.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">Yu-Gi-Oh</h5>
+                <p class="card-text">The release of a product featuring Ghost Rare cards is always something Yu-Gi-Oh! fans, especially 
+                    collectors, look forward too. However, the initial release of the 2021 Ghosts From the Past set was criticized 
+                    for a lack of depth in its card choices, only containing three packs, and the extremely low probability of 
+                    actually pulling Ghost Rares. 
+                    <br>
+                    <br>
+                    To try and course correct for its next release, Konami has announced the 2022 Ghosts From the Past. Set to drop on 
+                    April 23, 2022, the next set in the Ghosts From the Past collection will feature a lot of changes, including more 
+                    Ghost Rares and an additional pack per box. This brings the total up to 20, all-foil cards per pack. Each individual 
+                    box will cost $19.99 at retail.
+                    <br>
+                    <br>
+                    In the 2021 iteration of Ghosts From the Past, there were a total of five Ghost Rares available to pull—Crystal Wing 
+                    Synchro Dragon, Black Luster Soldier – Soldier of Chaos, Blue-Eyes Alternative White Dragon, alternate art Firewall 
+                    Dragon, and the original artwork Dark Magician. The pull rate for these cards typically averaged out to about one-per 
+                    case or 50 boxes of the set if you bought it sealed, which is pretty average for the rarer cards in a Yu-Gi-Oh! set 
+                    like that, although even that is never a guarantee. </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="{% static '/images/yugi-news.jpg' %}" class="img-fluid rounded-start" alt="Yu-Gi-Oh">
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -222,6 +222,14 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ![Screenshot of error](buildlab/buildfiles/screenshots/favi-error-handling.png "Favicon not working")
 
+- Fontawesome is having issues with version 5, and working on version 6 so it just wouldn't work for me. Had to give up on those icons.
+
+- Images were not properly rendering from the database, even though names and descriptors were.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/image-error.png "DB images not working")
+
+
+
 ## Deployment
 
 1. Create repo "cardboard_craic" on Github based on Code-institute template.

@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+    <div col-md-12>
+        <h3 class="welcome">Hello!</h3>
+    </div>
+
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{% static '/images/mtg-starter.png' %}" class="img-fluid rounded-start" alt="magic the gathering">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">Magic The Gathering</h5>
+                <p class="card-text">Magic: The Gathering (colloquially known as Magic or MTG) is a tabletop and digital collectible 
+                    card game created by Richard Garfield. Released in 1993 by Wizards of the Coast (now a subsidiary of Hasbro), 
+                    Magic was the first trading card game and had approximately thirty-five million players as of December 2018, 
+                    and over twenty billion Magic cards were produced in the period from 2008 to 2016, during which time it grew in popularity.
+                    <br>
+                    <br>
+                    A player in Magic takes the role of a Planeswalker, doing battle with other players as Planeswalkers by casting spells, 
+                    using artifacts, and summoning creatures as depicted on individual cards drawn from their individual decks. A player 
+                    defeats their opponent typically (but not always) by casting spells and attacking with creatures to deal damage to the opponent's 
+                    "life total," with the object being to reduce it from 20 to 0. Although the original concept of the game drew heavily from the 
+                    motifs of traditional fantasy role-playing games such as Dungeons & Dragons, the gameplay bears little similarity to pencil-and-paper
+                    adventure games, while simultaneously having substantially more cards and more complex rules than many other card games.
+                    <br>
+                    <br>
+                    Magic can be played by two or more players, either in person with printed cards or on a computer, smartphone or tablet 
+                    with virtual cards through the Internet-based software Magic: The Gathering Online or other video games such as 
+                    Magic: The Gathering Arena. It can be played in various rule formats, which fall into two categories: constructed and limited. 
+                    Limited formats involve players building a deck spontaneously out of a pool of random cards with a minimum deck size of 40 cards; 
+                    in constructed formats, players create decks from cards they own, usually with a minimum of 60 cards per deck.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">Yu-Gi-Oh</h5>
+                <p class="card-text">The Yu-Gi-Oh! Trading Card Game is a Japanese collectible card game developed and published 
+                    by Konami. It is based on the fictional game of Duel Monsters created by manga artist Kazuki Takahashi, which 
+                    appears in portions of the manga franchise Yu-Gi-Oh! (under the name of "Magic and Wizards"), and is the central 
+                    plot device throughout its various anime adaptations and spinoff series.
+                    <br>
+                    <br>
+                    The trading card game was launched by Konami in 1999 in Japan and March 2002 in North America. It was 
+                    named the top selling trading card game in the world by Guinness World Records on July 7, 2009, having sold over 
+                    22 billion cards worldwide. As of March 31, 2011, Konami Digital Entertainment Co., Ltd. Japan sold 25.2 billion 
+                    cards globally since 1999. As of January 2021, the game is estimated to have sold about 35 billion cards 
+                    worldwide and grossed over ¥1 trillion ($9.64 billion). 
+                    <br>
+                    <br>
+                    Yu-Gi-Oh! Speed Duel, a faster and simplified 
+                    version of the game, was launched worldwide in January 2019. Another faster-paced variation, Yu-Gi-Oh! Rush Duel, 
+                    launched in Japan in April 2020.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <img src="{% static '/images/yugioh_starter_1.jpg' %}" class="img-fluid rounded-start" alt="Yu-Gi-Oh">
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}

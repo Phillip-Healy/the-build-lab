@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+{% for content in contents %}
+    <div class="card mb-3">
+        <img src="{{ content.image.url }}" class="card-img-top" alt="{{ content.name }} image">
+        <div class="card-body">
+        <h5 class="card-title">{{ content.name }}</h5>
+        <p class="card-text">{{ content.description }}</p>
+        </div>
+    </div>
+{% endfor %}
+
+
+{% endblock %}
