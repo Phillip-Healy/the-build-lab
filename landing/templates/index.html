@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
     <title>The Build Lab</title>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,12 +29,37 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                        <a id="page-title" href="{% url 'index' %}">The <br> Build <br> Lab</a>
                     </li>
                 </ul>
 
+
+                <div class="form-inline my-2 my-lg-0">
+                    <a href="#" class="btn btn-warning">Home</a>
+                </div>
+
+                <div class="form-inline my-2 my-lg-0">
+                    <a href="#" class="btn btn-warning">News</a>
+                </div>
+                
+                <div class="form-inline my-2 my-lg-0">
+                    <a href="#" class="btn btn-warning">Premium</a>
+                </div>
+                
+                <div class="form-inline my-2 my-lg-0">
+                    <a href="#" class="btn btn-warning">Content</a>
+                </div>
+
+                <div class="form-inline my-2 my-lg-0">
+                    <a href="#" class="btn btn-warning">Register</a>
+                </div>
+
                 <div class="form-inline my-2 my-lg-0">
                     <a href="#" class="btn btn-warning">Login</a>
+                </div>
+                
+                <div class="form-inline my-2 my-lg-0">
+                    <a href="#" class="btn btn-warning">Log Out</a>
                 </div>
             </div>
         </div>

@@ -214,6 +214,14 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 - Setting up a try/except with some temp data allowed the page to load with the correct data once it was fully loaded.
 
+- Favicon won't show up, spent a little too much time on this, because it's not majorly important but it would have been nice...
+
+![Screenshot of error](buildlab/buildfiles/screenshots/favi-error.png "Favicon not working")
+
+- server was trying to find/display the favicon but to no avail. Tried changing locations, icon type, had a range of sizes and browser conditions etc. etc.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/favi-error-handling.png "Favicon not working")
+
 ## Deployment
 
 1. Create repo "cardboard_craic" on Github based on Code-institute template.
