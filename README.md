@@ -276,9 +276,12 @@ Window height calculations modified from http://martinpennock.com/blog/force-foo
 
 - Script to generate cookie to store session data modified from above by divanov11 on Github https://github.com/divanov11/ecom_steps/blob/master/m4-p1-s1-setcookies.html
 
+- silly showcase SVG squiggle effect on index page: https://css-tricks.com/having-fun-with-link-hover-effects/
+
 ### Media
 - Page logo designed and created by me on https://sketch.io/sketchpad/
-- Schema created on https://draw.io/app.diagrams/
+- Schema created by me on https://creately.com/
 
 ### Acknowledgements
 Thank you to my wife and friends who tested the site during development.
+Thank you to Colm from code institute who supported me and fought in my side to get an extension when my ADHD diagnosis came through.
