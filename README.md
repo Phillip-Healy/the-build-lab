@@ -291,4 +291,4 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ### Acknowledgements
 Thank you to my wife and friends who tested the site during development.
-Thank you to Colm from code institute who supported me and fought in my side to get an extension when my ADHD diagnosis came through.
+Thank you to Colin from code institute student care who supported me and fought in my side to get an extension when my ADHD diagnosis came through.

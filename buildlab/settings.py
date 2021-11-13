@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     # Our Apps
     'landing.apps.LandingConfig',
+    'interactions.apps.InteractionsConfig',
 ]
 
 REST_FRAMEWORK = {
