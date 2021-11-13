@@ -235,6 +235,14 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 - Turns out that was an issue with datetime having a large character count and corrupting memory on another column. Rolled back to an old makemigrate and slowed things down to find the issue.
 
+- Messing with a custom user class (Customers) has been a mistake basically the entire project. I thought I was giving myself more freedom, and using better coding practices. I was wrong. I've run into issue after issue with this. I only really realised this on my second last day. It might be too late. This might be what finally fails me on this disaster project.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/customer-error.png "customer class not working")
+
+- Getting a 'No reverse match' error when rendering the base page which hasn't been edited in a long long time. Say's 'terms' can't be reverse matched. 
+
+![Screenshot of error](buildlab/buildfiles/screenshots/terms-error.png "reverse match not working")
+
 ## Deployment
 
 1. Create repo "cardboard_craic" on Github based on Code-institute template.

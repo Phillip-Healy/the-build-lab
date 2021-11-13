@@ -12,6 +12,8 @@ class Customer(models.Model):
     password = models.CharField(max_length=40, default="codeinstitute")
     premium = models.BooleanField()
 
+    USERNAME_FIELD = 'username'
+
     def __str__(self):
         return self.username
 
