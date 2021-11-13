@@ -1,3 +1,6 @@
+""" Models to generate the database """
+import datetime
+
 from django.db import models
 from django.urls import reverse  # Used to generate URLs by reversing
 
@@ -20,7 +23,7 @@ class Payment(models.Model):
     """ Model for tracking and storing payments """
     user = models.ForeignKey('Customer', on_delete=models.SET_NULL, null=True)
     price = models.DecimalField(max_digits=5, decimal_places=2, default=19.99)
-    complete = models.BooleanField()
+    complete = models.BooleanField(default=False)
     date = models.DateField(auto_now_add=True)
 
     def get_absolute_url(self):
@@ -36,3 +39,13 @@ class Content(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class FutureRequest(models.Model):
+    """ Model for logged in users to share ideas for future content"""
+    future = models.CharField(max_length=200)
+    date = models.DateField(auto_now_add=True)
+    requester = models.ForeignKey(Customer, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.future
