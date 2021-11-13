@@ -1,11 +1,18 @@
 from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 from .models import Customer, Payment, Content
 
 
 def index(request):
     """ View function for home page """
 
-    return render(request, 'index.html')
+    if request.user.is_authenticated:
+        user = request.user.get_username
+        context = {'user': user}
+    else:
+        context = {}
+
+    return render(request, 'index.html', context)
 
 
 def news(request):
@@ -14,12 +21,14 @@ def news(request):
     return render(request, 'news.html')
 
 
+@login_required
 def games(request):
     """ View function for games page """
 
     return render(request, 'games.html')
 
 
+@login_required
 def premium(request):
     """ View function for premium page """
 

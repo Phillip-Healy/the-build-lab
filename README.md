@@ -106,6 +106,7 @@ A project violating any of these requirements will FAIL:
 
 - Desktop Content
 ![Screenshot of Wireframe](buildlab/buildfiles/screenshots/wireframe-desktop-content.png "Desktop - Content")
+
 #### Schema
 
 ![Screenshot of Database Relationship Schema](buildlab/buildfiles/screenshots/DBRS.png "Database Relationship Schema")
@@ -156,11 +157,6 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 - Django REST framework is a powerful and flexible toolkit for building Web APIs.
 -- Using rest API token authentication for secure authentication and validation via tokens.
 
-### Werkzeug 
-- Werkzeug is a comprehensive WSGI web application library. It began as a simple collection of various utilities for WSGI applications and has become one of the
- most advanced WSGI utility libraries. Flask wraps Werkzeug, using it to handle the details 
- of WSGI while providing more structure and patterns for defining powerful applications. (https://www.palletsprojects.com/p/werkzeug/)
-
 ### Bootstrap
 - Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites. (https://www.w3schools.com/whatis/whatis_bootstrap.asp)
 
@@ -168,9 +164,10 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 - Balsamiq Wireframes is a rapid low-fidelity UI wireframing tool that reproduces the experience of sketching on a notepad or whiteboard, but using a computer. (https://balsamiq.com/wireframes/)
 
 ### Font Awsome
-- Font Awesome is a font and icon toolkit based on CSS and Less. (https://fontawesome.com)
+- Font Awesome is a font and icon toolkit based on CSS and Less. (https://fontawesome.com) Font awesome did not work, but was attempted.
 
 ## Testing
+
 
 
 
@@ -228,7 +225,9 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ![Screenshot of error](buildlab/buildfiles/screenshots/image-error.png "DB images not working")
 
+- Django docs had "import os" and other methods for tracking paths and directories through local files. Working on gitpod many of these did not work, including with linking authentication templates. This had me going down many rabbit-holes and researching how to fix it. There were many things about building DIR paths but nothing worked for the longest time. Eventually I rebuilt where my folders and files were and this sorted a couple of major issues.
 
+![Screenshot of error](buildlab/buildfiles/screenshots/login-error.png "login not working")
 
 ## Deployment
 
@@ -275,8 +274,8 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 ## Credits
 
 ### Content
-- Back to top button modified from code taken from https://www.templatemonster.com/blog/back-to-top-button-css-jquery/
-Window height calculations modified from http://martinpennock.com/blog/force-footer-bottom-page-css/
+
+- Window height calculations modified from http://martinpennock.com/blog/force-footer-bottom-page-css/
 
 - checkout buttons and logic modified from https://codewithsteps.herokuapp.com/part/58e22993-f5a4-4ed7-92df-aede6711bf69/
 

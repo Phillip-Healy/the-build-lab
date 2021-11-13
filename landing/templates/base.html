@@ -37,11 +37,14 @@
                 <div class="form-inline my-2 my-lg-0">
                     <a href="{% url 'index' %}" class="btn btn-warning nav-page">Home</a>
                     <a href="{% url 'news' %}" class="btn btn-warning nav-page">News</a>
-                    <a href="{% url 'games' %}" class="btn btn-warning nav-page">Games</a>
-                    <a href="{% url 'premium' %}" class="btn btn-warning nav-page">Premium</a>
-                    <a href="#" class="btn btn-warning nav-page">Register</a>
-                    <a href="{% url 'login' %}" class="btn btn-warning nav-page">Login</a>
-                    <a href="#" class="btn btn-warning nav-page">Log Out</a>
+                    <a href="{% url 'premium' %}" class="btn btn-warning nav-page">Premium</a>                    
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'games' %}" class="btn btn-warning nav-page">Games</a>
+                        <a href="#" class="btn btn-warning nav-page">Log Out</a>
+                    {% else %}
+                        <a href="{% url 'login' %}" class="btn btn-warning nav-page">Login</a>
+                        <a href="#" class="btn btn-warning nav-page">Register</a>
+                    {% endif %}
                 </div>
 
                 

@@ -29,6 +29,9 @@ img {
 body{
 	font-family: 'Poppins', sans-serif;
 	background-color: #550000;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
 }
 
 #content-wrapper{
