@@ -42,7 +42,7 @@ def premium(request):
     if request.user.groups.filter(name__in=['premium']).exists():
         return render(request, 'premium.html', context)
     else:
-        return redirect('index')
+        return redirect('payments')
 
 
 def register(request):

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+    <div col-md-12>
+        <h3 class="welcome">Hello {{ user.get_username.capitalize }}</h3>
+    </div>
+
+    <!--Payments via Stripe-->
+    <div class="container">
+      <button class="button is-primary" id="submitBtn">Purchase!</button>
+    </div>
+
+
+
+
+{% endblock %}

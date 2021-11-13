@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from .secrets import SUPER_SECRET_KEY, SQL_PASSWORD
+from .secrets import SUPER_SECRET_KEY, SQL_PASSWORD, STRIPE_SECRET
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -144,6 +144,7 @@ STATICFILES_DIRS = [
     "/workspace/the-build-lab/buildlab/static/",
     "/workspace/the-build-lab/buildlab/static/css",
     "/workspace/the-build-lab/buildlab/static/images",
+    "/workspace/the-build-lab/buildlab/static/scripts",
 ]
 
 MEDIA_URL = '/images/'
@@ -159,3 +160,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Stripe keys
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51JvT9mBRo6elGpC9jThcFJOuYLWVKwhAGSHHralPLEyAf7Z25qxYOqql4dZq8w46wCPDwdSLbmHvZ9xmTkHA8tgy00uggQCUYO'
+STRIPE_SECRET_KEY = STRIPE_SECRET
