@@ -1,4 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import NewCustomerForm
+from django.contrib.auth import login
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Customer, Payment, Content
 
@@ -36,3 +39,16 @@ def premium(request):
     contents = Content.objects.all()
     context = {'contents': contents}
     return render(request, 'premium.html', context)
+
+
+def register_request(request):
+    if request.method == "POST":
+        form = NewCustomerForm(request.POST)
+        if form.is_valid():
+            customer = form.save()
+            login(request, customer)
+            messages.success(request, "Registration successful.")
+            return redirect("index")
+            messages.error(request, "Unsuccessful registration. Invalid information.")
+    form = NewCustomerForm()
+    return render(request=request, template_name="register.html", context={"register_form": form})

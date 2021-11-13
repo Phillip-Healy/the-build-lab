@@ -8,7 +8,7 @@ admin.site.register(Content)
 
 # Define admin class for Customer
 class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'email', 'premium')
+    list_display = ('id', 'username', 'email', 'password', 'premium')
 
 
 # Register the admin class and associated model

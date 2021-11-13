@@ -229,6 +229,12 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ![Screenshot of error](buildlab/buildfiles/screenshots/login-error.png "login not working")
 
+- infuriating error when updating models. Terminal just keeps saying a value is too long, but not what value or even which model. I've tried them all individually and NOTHING. ready to pull my hair out. 
+
+![Screenshot of error](buildlab/buildfiles/screenshots/varchar-error.png "migrate not working")
+
+- Turns out that was an issue with datetime having a large character count and corrupting memory on another column. Rolled back to an old makemigrate and slowed things down to find the issue.
+
 ## Deployment
 
 1. Create repo "cardboard_craic" on Github based on Code-institute template.
