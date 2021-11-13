@@ -243,6 +243,8 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ![Screenshot of error](buildlab/buildfiles/screenshots/terms-error.png "reverse match not working")
 
+- Navbar view is incredibly inconsistent. Shows areas that should be off limits depending on if you're logged in/out, and premium only areas regardless of who is logged in. very confusing and frustrating because my logic looks sound.
+
 ## Deployment
 
 1. Create repo "cardboard_craic" on Github based on Code-institute template.

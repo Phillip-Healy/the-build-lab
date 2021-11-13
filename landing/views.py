@@ -3,7 +3,7 @@ from .forms import RegisterForm
 from django.contrib.auth import login
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import Customer, Payment, Content
+from .models import Payment, Content
 
 
 def index(request):
@@ -38,7 +38,11 @@ def premium(request):
     # Generate data from DB
     contents = Content.objects.all()
     context = {'contents': contents}
-    return render(request, 'premium.html', context)
+
+    if request.user.groups.filter(name__in=['premium']).exists():
+        return render(request, 'premium.html', context)
+    else:
+        return redirect('index')
 
 
 def register(request):

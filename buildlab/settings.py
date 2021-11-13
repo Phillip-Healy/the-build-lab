@@ -38,12 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'crispy_forms',
     # rest API
     'rest_framework',
     'rest_framework.authtoken',
     # Our Apps
     'landing.apps.LandingConfig',
+    'payments.apps.PaymentsConfig',
 ]
 
 REST_FRAMEWORK = {

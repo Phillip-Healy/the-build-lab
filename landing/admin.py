@@ -1,15 +1,6 @@
 from django.contrib import admin
-from .models import Customer, Payment, Content
+from .models import Payment, Content
 
 
 admin.site.register(Payment)
 admin.site.register(Content)
-
-
-# Define admin class for Customer
-class CustomerAdmin(admin.ModelAdmin):
-    list_display = ('id', 'username', 'email', 'password', 'premium')
-
-
-# Register the admin class and associated model
-admin.site.register(Customer, CustomerAdmin)
