@@ -39,13 +39,3 @@ class Content(models.Model):
 
     def __str__(self):
         return self.name
-
-
-class FutureRequest(models.Model):
-    """ Model for logged in users to share ideas for future content"""
-    future = models.CharField(max_length=200)
-    date = models.DateField(auto_now_add=True)
-    requester = models.ForeignKey(Customer, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return self.future
