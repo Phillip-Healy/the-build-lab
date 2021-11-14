@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
 import environ
 environ.Env.read_env
 
@@ -161,3 +162,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Stripe keys
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51JvT9mBRo6elGpC9jThcFJOuYLWVKwhAGSHHralPLEyAf7Z25qxYOqql4dZq8w46wCPDwdSLbmHvZ9xmTkHA8tgy00uggQCUYO'
 STRIPE_SECRET_KEY = STRIPE_SECRET
+
+django_heroku.settings(locals())
