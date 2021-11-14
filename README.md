@@ -277,6 +277,11 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 ![Screenshot of error](buildlab/buildfiles/screenshots/heroku-error-2.png "heroku not working")
 ![Screenshot of error](buildlab/buildfiles/screenshots/heroku-error-3.png "heroku not working")
 
+- Deployed and launching, but crashing every minute as $port isn't binding.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/heroku-error-4.png "heroku not working")
+
+
 ## Deployment
 
 1. Create repo "the build lab" on Github based on Code-institute template.
@@ -329,9 +334,9 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 24. Deploy and immediately change secrets.
 
-24. You can now "Open App" and will see the test page you created.
+24. You can now "Open App".
 
-20. Live app:  
+20. Live app:  https://the-build-lab.herokuapp.com/
 
 ## Credits
 
