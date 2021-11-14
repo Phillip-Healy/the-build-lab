@@ -320,6 +320,10 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 23. ~~Cry~~
 
+23. Expose dummy secrets temporarily.
+
+24. Deploy and immediately change secrets.
+
 24. You can now "Open App" and will see the test page you created.
 
 20. Live app:  
