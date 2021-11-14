@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'SUPER_SECRET_KEY'
+SECRET_KEY = SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -97,7 +97,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'qjdkxkrv',
         'USER': 'qjdkxkrv',
-        'PASSWORD': 'SQL_PASSWORD',
+        'PASSWORD': SQL_PASSWORD,
         'HOST': 'tai.db.elephantsql.com',
         'PORT': '',
     }
@@ -160,4 +160,4 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Stripe keys
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51JvT9mBRo6elGpC9jThcFJOuYLWVKwhAGSHHralPLEyAf7Z25qxYOqql4dZq8w46wCPDwdSLbmHvZ9xmTkHA8tgy00uggQCUYO'
-STRIPE_SECRET_KEY = 'STRIPE_SECRET'
+STRIPE_SECRET_KEY = STRIPE_SECRET
