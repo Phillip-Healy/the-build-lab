@@ -168,7 +168,26 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ## Testing
 
+- As a gamer I would like to see a collection of card games to play.
+- - Free users can see the news and games collections to check out card games both old and new.
 
+- As a boardgame enthusiast I would like to see entertaining opinions on various card games.
+- - Free users can see the news and games collections to check out card games both old and new.
+
+- As a casual Yu-gi-oh player I want to see if there's some tips on improving.
+- - Becoming a premium user offers ways to improve your deck building at all levels.
+
+- As a professional Magic The Gathering player I want to see what others are doing with the new cards.
+- - Becoming a premium user offers ways to improve your deck building at all levels.
+
+- As a competitive player I would like to see what game might be right for me to jump into.
+- - Whether free or premium there will be content to help decide what other games would be good for all sorts of users.
+
+- As a hobbyist I'd love to find out news about new cards and how they might change the current meta-game.
+- - The news feed is perfect for this, premium goes even further into that very subject.
+
+- As a fan I want to be able to register and support the site.
+- - Just registering will be a big help, but having the ability to pay (via stripe) for premium content will be a massive boost to the site!
 
 
 ### Bugs Encountered
@@ -243,47 +262,65 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ![Screenshot of error](buildlab/buildfiles/screenshots/terms-error.png "reverse match not working")
 
-- Navbar view is incredibly inconsistent. Shows areas that should be off limits depending on if you're logged in/out, and premium only areas regardless of who is logged in. very confusing and frustrating because my logic looks sound.
+- Navbar view is incredibly inconsistent. Shows areas that should be off limits depending on if you're logged in/out, and premium only areas regardless of who is logged in. very confusing and frustrating because my logic looks sound. Fixed this by breaking it and starting from scratch. Still an issue on initial load, but fixes itself quickly.
+
+- Following stripes doc to the letter, getting error after error on the console. Not really sure what to do or where to go. I had to destroy several apps to get this to work. There musty have been conflicts between them. I got it working, but it was so much stress, panic, torment.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/stripe-error.png "stripe not working")
+
+- Heroku not accepting hidden config vars, giving error due to secret keys on gitignore.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/heroku-error.png "heroku not working")
 
 ## Deployment
 
-1. Create repo "cardboard_craic" on Github based on Code-institute template.
+1. Create repo "the build lab" on Github based on Code-institute template.
 
 2. Open workspace on Gitpod.
 
-3. Install: updated pip, Flask, flask-pymongo, dnspython.
+3. Install: updated pip, django, pillow, psycopg2, stripe.
 
-4. Create environments file env.py, and add this (and pycache) to gitignore for security.
+4. Create django project with django-admin startproject buildlab.
 
-5. create requirements.txt with pip3 freeze, create Procfile.
+5. Create requirements.txt with pip freeze > requirements.txt
 
-6. Log into MongoDB, join free cluster.
+6. Log into elephant.sql and create free account to use postgresql database for the project.
 
-7. Create database cardboard_craic on free cluster.
+7. Use Entity Relationship Schema to map database.
 
-8. Create collections on this database: games, genres, users, reviews as per schema.
+8. Create models.py based on this database schema.
 
 9. Insert initial documents to these collections to test connectivity etc.
 
-10. Back on Gitpod workspace create app.py and wire it up to the env.py.
+10. Python manage.py makemigrations and migrate to move the database to server.
 
-11. Create first @app.route("/") and define a test page.
+11. Create admin user with python manage.py createsuperuser.
 
-12. Go to Heroku.com and log in.
+12. Create templates directory.
 
-13. Create app cardboard_craic.
+13. Create url.py and views.py and wire these up together.
 
-14. Go to Deploy and click deploy via Github. 
+14. Add the relevant info to settings.py.
 
-15. Put in Github username and repo name, make sure the correct repo opens.
+15. pyton manage.py runserver to test connectivity and initial wiring.
 
-16. Go to settings and click Reveal Config Vars. Add all info from env.py to this as it won't be picked up through Github (gitignore).
+16. Go to Heroku and set up account.
 
-17. Back to deploy page click "Automatically deploy from branch: Master".
+17. start new app.
 
-18. Wait to see this light up green. 
+18. Wire up to github and make sure repo name matches.
 
-19. You can now "Open App" and will see the test page you created.
+19. Go to settings and click Reveal Config Vars. Add all info from secrets to this as it won't be picked up through Github (gitignore).
+
+20. Back to deploy page click "Automatically deploy from branch: Main".
+
+21. Wait to see this light up green.
+
+22. It doesn't, it doesn't like that there's hidden values even though those are in config vars.
+
+23. ~~Cry~~
+
+24. You can now "Open App" and will see the test page you created.
 
 20. Live app:  
 
@@ -301,10 +338,13 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 - silly showcase SVG squiggle effect on index page: https://css-tricks.com/having-fun-with-link-hover-effects/
 
+- Stripe code that finally worked modified from: https://justdjango.com/blog/django-stripe-payments-tutorial
+
 ### Media
 - Page logo designed and created by me on https://sketch.io/sketchpad/
 - Schema created by me on https://creately.com/
+- images for cards/boxes taken from https://boardgamegeek.com
 
 ### Acknowledgements
 Thank you to my wife and friends who tested the site during development.
-Thank you to Colin from code institute student care who supported me and fought in my side to get an extension when my ADHD diagnosis came through.
+Thank you to Colin from code institute student care who supported me and fought on my side to get an extension when my ADHD diagnosis came through.

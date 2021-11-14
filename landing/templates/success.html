@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+    <div class="login-box">
+        <h2>You're now a premium user, {{ user.get_username.capitalize }}!</h2>
+        <hr>
+        <a href="{% url 'premium' %}">Check out what you've unlocked!</a>.
+        <br>
+        <br>
+        <a href="{% url 'index' %}">Or go back to the home page.</a>
+    </div>
+{% endblock %}

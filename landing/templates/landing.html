@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+        <div class="product login-box">
+            <div class="description">
+                <h3>{{ product.name }}</h3>
+                <hr />
+                {% for price in prices %}
+                <p>Upgrade to a premium user in order to gain access to the elite clubhouse! This is where the best content on
+                    the site is; Competitive deck techs, fun build ideas, tutorials on what's hot, and much, much more!
+                    <br>
+                    <br>
+                    Pay once and get access to all premium content for life.
+                </p>
+                <div>
+                    <h5>${{ price.get_display_price }}</h5>
+                    <form action="{% url 'create-checkout-session' price.id %}" method="POST">
+                        {% csrf_token %}
+                        <button type="submit">Checkout</button>
+                    </form>
+                </div>
+
+                {% endfor %}
+            </div>
+        </div>
+{% endblock %}

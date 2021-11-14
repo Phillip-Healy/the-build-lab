@@ -1,9 +1,18 @@
+""" Views for landing app """
+import stripe
+
 from django.shortcuts import render, redirect
 from .forms import RegisterForm
+from django.views import View
 from django.contrib.auth import login
+from django.conf import settings
+from django.http import JsonResponse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .models import Payment, Content
+from .models import Payment, Content, Price, Product
+from django.views.generic import TemplateView
+
+stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 def index(request):
@@ -65,3 +74,45 @@ def register(request):
             return render(request, 'register.html', context)
 
     return render(request, 'register.html', {})
+
+
+class CreateCheckoutSessionView(View):
+    def post(self, request, *args, **kwargs):
+        price = Price.objects.get(id=self.kwargs["pk"])
+        YOUR_DOMAIN = "https://8000-amaranth-chimpanzee-hy17mdxs.ws-eu18.gitpod.io/"  # change in production
+        checkout_session = stripe.checkout.Session.create(
+            payment_method_types=['card'],
+            line_items=[
+                {
+                    'price': price.stripe_price_id,
+                    'quantity': 1,
+                },
+            ],
+            mode='payment',
+            success_url=YOUR_DOMAIN + '/success/',
+            cancel_url=YOUR_DOMAIN + '/cancel/',
+        )
+        return redirect(checkout_session.url)
+
+
+class SuccessView(TemplateView):
+    template_name = "success.html"
+
+
+class CancelView(TemplateView):
+    template_name = "cancel.html"
+
+
+class ProductLandingPageView(TemplateView):
+    template_name = "landing.html"
+
+    def get_context_data(self, **kwargs):
+        product = Product.objects.get(name="Premium")
+        prices = Price.objects.filter(product=product)
+        context = super(ProductLandingPageView,
+                        self).get_context_data(**kwargs)
+        context.update({
+            "product": product,
+            "prices": prices
+        })
+        return context

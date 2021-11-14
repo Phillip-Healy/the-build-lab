@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-from .secrets import SUPER_SECRET_KEY, SQL_PASSWORD, STRIPE_SECRET
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -41,9 +40,10 @@ INSTALLED_APPS = [
     # rest API
     'rest_framework',
     'rest_framework.authtoken',
+    # Stripe
+    'stripe',
     # Our Apps
     'landing.apps.LandingConfig',
-    'payments.apps.PaymentsConfig',
 ]
 
 REST_FRAMEWORK = {
