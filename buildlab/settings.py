@@ -97,7 +97,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'qjdkxkrv',
         'USER': 'qjdkxkrv',
-        'PASSWORD': SQL_PASSWORD,
+        'PASSWORD': 'SQL_PASSWORD',
         'HOST': 'tai.db.elephantsql.com',
         'PORT': '',
     }
@@ -166,4 +166,4 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Stripe keys
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51JvT9mBRo6elGpC9jThcFJOuYLWVKwhAGSHHralPLEyAf7Z25qxYOqql4dZq8w46wCPDwdSLbmHvZ9xmTkHA8tgy00uggQCUYO'
-STRIPE_SECRET_KEY = STRIPE_SECRET
+STRIPE_SECRET_KEY = 'STRIPE_SECRET'
