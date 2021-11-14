@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 import environ
 environ.Env.read_env
 
@@ -144,6 +144,10 @@ STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
+    "/workspace/the-build-lab/buildlab/static/",
+    "/workspace/the-build-lab/buildlab/static/css",
+    "/workspace/the-build-lab/buildlab/static/images",
+    "/workspace/the-build-lab/buildlab/static/scripts",
 ]
 
 MEDIA_URL = '/images/'
