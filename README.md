@@ -272,6 +272,11 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ![Screenshot of error](buildlab/buildfiles/screenshots/heroku-error.png "heroku not working")
 
+- Got Heroku to deploy, but it's not running the web server for the app.
+
+![Screenshot of error](buildlab/buildfiles/screenshots/heroku-error-2.png "heroku not working")
+![Screenshot of error](buildlab/buildfiles/screenshots/heroku-error-3.png "heroku not working")
+
 ## Deployment
 
 1. Create repo "the build lab" on Github based on Code-institute template.
