@@ -107,7 +107,7 @@ DATABASES = {
         'USER': 'qjdkxkrv',
         'PASSWORD': (os.environ.get("SQL_PASSWORD", 'dev default value')),
         'HOST': 'tai.db.elephantsql.com',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
@@ -154,7 +154,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    '/workspace/the-build-lab/buildlab/static/css/',
+    '/workspace/the-build-lab/buildlab/static/css',
     '/workspace/the-build-lab/buildlab/static/images/',
     '/workspace/the-build-lab/buildlab/static/scripts/',
 ]

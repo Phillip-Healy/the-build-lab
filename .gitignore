@@ -10,3 +10,4 @@ secrets.py
 /workspace/the-build-lab/buildlab/secrets.py
 .env
 /workspace/the-build-lab/settings.json
+settings.json
