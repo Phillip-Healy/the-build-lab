@@ -12,14 +12,16 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import dj_database_url
 import django_heroku
 import environ
+import json
 
 env = environ.Env()
 environ.Env.read_env
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.join(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -32,7 +34,7 @@ SECRET_KEY = (os.environ.get("SECRET_KEY", 'dev default value'))
 DEBUG = False
 
 ALLOWED_HOSTS = ['https://the-build-lab.herokuapp.com/', 
-                '127.0.0.1:',
+                '127.0.0.1',
                 'localhost',
             ]
 
