@@ -1,1 +1,1 @@
-web: gunicorn the-build-lab.wsgi
+web: python manage.py runserver
