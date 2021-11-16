@@ -152,6 +152,13 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    '/workspace/the-build-lab/buildlab/static/css',
+    '/workspace/the-build-lab/buildlab/static/images',
+    '/workspace/the-build-lab/buildlab/static/scripts',
+]
+
 MEDIA_URL = '/images/'
 
 MEDIA_ROOT = "/workspace/the-build-lab/buildlab/static/images"
