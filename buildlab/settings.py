@@ -26,7 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = (os.environ.get("SECRET_KEY", 'dev default value'))
+SECRET_KEY = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+SECRET_KEY = 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -77,7 +79,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / "templates",
+            os.path.join(BASE_DIR, 'templates'),
             "/workspace/the-build-lab/templates/registration/",
         ],
         'APP_DIRS': True,
