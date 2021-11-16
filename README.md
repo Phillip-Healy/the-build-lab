@@ -27,7 +27,7 @@ In this project, you'll build a full-stack site based around business logic used
 
 HTML, CSS, JavaScript, Python+Django 
 
-Relational database (recommending MySQL or Postgres) 
+Relational database - Postgres) 
 
 Stripe payments 
 
@@ -125,9 +125,21 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ### Existing Features
 
+- Home page which lays out everything that the site offers. Showcases what each "tier" offers and why you would want to register/pay for premium. Provides a clean, engaging experience, and the whole site is navigable from every other part of the site; as long as you have permission (games only viewable if you're logged in. Premium only viewable if you're logged in as a paid user).
+
+- News page for free users, lays out the news in an easy to read fashion with images for extra engagement.
+
+- Games gives a run down of the various cardgames out there. This page is only accessible to logged in users.
+
+- Premium will redirect users who have not paid yet to a payment page, if a premium user is logged in they will be brought to a special page with premium content.
+
+- Login/register will only be navigable if you're logged out.
+
+- Log out is only available if you're logged in.
 
 ### Future Features
 
+- Currently Stripe is in test mode, if it was live it would be wired up to change users group from free to premium once a payment had been complete.
 
 ## Technologies Used
 
@@ -334,9 +346,9 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 24. Deploy and immediately change secrets.
 
-24. You can now "Open App".
+25. You can now "Open App".
 
-20. Live app:  https://the-build-lab.herokuapp.com/
+26. Live app:  https://the-build-lab.herokuapp.com/
 
 ## Credits
 
@@ -353,6 +365,8 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 - silly showcase SVG squiggle effect on index page: https://css-tricks.com/having-fun-with-link-hover-effects/
 
 - Stripe code that finally worked modified from: https://justdjango.com/blog/django-stripe-payments-tutorial
+
+- Much of the code is adapted from Django docs https://docs.djangoproject.com/en/3.2/
 
 ### Media
 - Page logo designed and created by me on https://sketch.io/sketchpad/

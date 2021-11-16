@@ -34,6 +34,7 @@ SECRET_KEY = (os.environ.get("SECRET_KEY", 'dev default value'))
 DEBUG = False
 
 ALLOWED_HOSTS = ['https://the-build-lab.herokuapp.com/',
+                127:0:0:0,
             ]
 
 
