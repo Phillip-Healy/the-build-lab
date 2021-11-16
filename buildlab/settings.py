@@ -43,7 +43,6 @@ ALLOWED_HOSTS = ['https://the-build-lab.herokuapp.com/',
 # Application definition
 
 INSTALLED_APPS = [
-    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -162,6 +161,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Redirect to home URL after login (Default redirects to /accounts/profile/)
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+# Error Logging
+ADMINS = [('Phillip Healy', 'philliprhealy@gmail.com'),]
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Stripe keys
