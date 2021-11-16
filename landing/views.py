@@ -97,6 +97,7 @@ class CreateCheckoutSessionView(View):
 
 class SuccessView(TemplateView):
     template_name = "success.html"
+    # On a live payment this would then check payment is complete and change user group
 
 
 class CancelView(TemplateView):
