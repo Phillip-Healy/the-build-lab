@@ -1,0 +1,172 @@
+/* --------------------------  Fonts, colors, special */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,500&display=swap');
+
+svg {
+	width: 100%;  
+}
+
+img {
+	max-height: 100%;
+	max-width: auto;
+}
+
+.squiggle {
+	animation: shift 1s linear infinite;
+  }
+  
+@keyframes shift {
+	from { transform:translateX(0); }
+	to { transform:translateX(-20px); }
+}
+
+.white-text {
+	color: #fff;
+}
+
+/* ------------------------------- Base template */
+
+body{
+	font-family: 'Poppins', sans-serif;
+	background-color: #550000;
+	color: #000;
+	font-size: 18px;
+	text-align: center;
+}
+
+#content-wrapper{
+	min-height: calc(100vh - 220px);
+}
+
+.navbar {
+	height: 120px;
+}
+
+#footer {
+	max-width: 100%;
+	color: #fff;
+	height: 100px;
+}
+
+#page-title {
+	font-size: xx-large;
+	text-decoration: none;
+	line-height: 80%;
+	color: #FFAAAA;
+}
+
+.navbar-brand img {
+	max-width: 120px;
+	max-height: auto;
+	display: block;
+}
+
+.nav-page {
+	transition: all 0.5s;
+}
+
+.nav-page:hover {
+	background-color: #550000;
+	color: #FFAAAA;
+}
+
+.footer-media {
+	color: #FFAAAA;
+}
+
+.footer-copyright {
+	text-align: right;
+}
+
+
+
+/* ------------------------------- index */
+
+#showcase {
+	font-size: 18px;
+}
+
+#sales-pitch {
+	border-bottom: 1px solid #453886;
+	color: #453886;
+	padding-bottom: .25em;
+	text-decoration: none;
+}
+
+/* ref: https://css-tricks.com/having-fun-with-link-hover-effects/ */
+#sales-pitch:hover {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+	background-position: bottom;
+	background-repeat: repeat-x;
+	background-size: 20%;
+	border-bottom: 0;
+	padding-bottom: .3em;
+	text-decoration: none;
+}
+
+.call-to-action {
+	text-decoration: none;
+	color: #fff;
+	background-color: #550000;
+	transition: all 0.5s;
+}
+
+.call-to-action:hover {
+	color: #000;
+	background-color: yellow;
+}
+
+.card-group {
+	margin-bottom: 25px;
+}
+
+.card-title {
+	text-transform: capitalize;
+	color: #550000;
+	font-size: 26px;
+	text-align: center;
+}
+
+/* ------------------------------- news */
+
+
+/* ------------------------------- games */
+
+.welcome {
+	color: #FFAAAA;
+	font-size: 28px;
+	text-align: center;
+}
+
+/* ------------------------------- premium */
+
+#premium-img {
+	height: 450px;
+}
+
+#premium-text {
+	font-size: 18px;
+}
+
+/* ------------------------------- register/log in/out */
+
+.login-box {
+	border: 2px solid #FFAAAA;
+	width: 70%;
+	margin-left: 15%;
+	color: #FFF;
+	background-color: #550000;
+	text-align: center;
+	font-size: 18px;
+}
+
+.login-box table {
+	text-align: center;
+	font-size: 24px;
+	margin: 10px;
+}
+
+.login-box a {
+	text-decoration: none;
+	color: #FFF;
+}
