@@ -2,31 +2,33 @@
 
 {% block content %}
 {% load static %}
-        <div class="card text-center  col-lg-8 sm-12">
-            <div class="card-header">
-              Welcome To The Build Lab
-            </div>
-            <div id="showcase" class="card-body">
-              <h5 class="card-title">The Build Lab</h5>
-              <p class="card-text">The build lab has been built from the ground up to provide everyone with an experience tailored to
-                  what they want from the site.
-                  <hr>
-                  If you do not register with the site you can browse the news, and see what we're all about.
-                  <br>
-                  <br>
-                  Register as a free user to get an intro to each card game we play, why we like/dislike it, and find out if 
-                  it's for you!
-                  <br>
-                  <br>
-                  Register as a <strong><a href="{% url 'premium' %}" id="sales-pitch">PREMIUM USER</a></strong> to get access to our bonus content. This includes 
-                  things like deck techs, fun ideas for new game modes, and much more! 
-              </p>
-            </div>
-            <div class="card-footer text-muted">
-              
-            </div>
+        <div class="row">
+          <div class="card text-center  col-lg-8 sm-12">
+              <div class="card-header">
+                Welcome To The Build Lab
+              </div>
+              <div id="showcase" class="card-body">
+                <h5 class="card-title">The Build Lab</h5>
+                <p class="card-text">The build lab has been built from the ground up to provide everyone with an experience tailored to
+                    what they want from the site.
+                    <hr>
+                    If you do not register with the site you can browse the news, and see what we're all about.
+                    <br>
+                    <br>
+                    Register as a free user to get an intro to each card game we play, why we like/dislike it, and find out if 
+                    it's for you!
+                    <br>
+                    <br>
+                    Register as a <strong><a href="{% url 'premium' %}" id="sales-pitch">PREMIUM USER</a></strong> to get access to our bonus content. This includes 
+                    things like deck techs, fun ideas for new game modes, and much more! 
+                </p>
+              </div>
+              <div class="card-footer text-muted">
+                
+              </div>
           </div>
-
+        </div>
+        <div class="row">
           <div class="card-group col-lg-4 sm-12">
             <div class="card">
               <img src="{% static 'images/obelisk.jpg' %}" class="card-img-top" alt="Obelisk the tormentor">
@@ -68,4 +70,5 @@
               </div>
             </div>
           </div>
+        </div>
 {% endblock %}
