@@ -295,6 +295,8 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 - Had MAJOR issues with deployement, had to open ports and expose passwords and keys that I'd never do in production. This was to eliminate things one at a time. I have rolled every key and password and made everything secure again.
 
+- Images that were loading in DEBUG/Dev on premium are no longer working (They're being pulled from the database, presented through django). I have tried a few fixes and don't have time to explore further.
+
 
 ## Deployment
 
