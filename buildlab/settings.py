@@ -123,7 +123,14 @@ WSGI_APPLICATION = 'buildlab.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.parse("postgres://qjdkxkrv:iEB289BdbtM3P9YkbUYqvX_tHgVBwzVQ@tai.db.elephantsql.com/qjdkxkrv")
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'qjdkxkrv',
+        'USER': 'qjdkxkrv',
+        'PASSWORD': (os.environ.get("SQL_PASSWORD", 'dev default value')),
+        'HOST': 'tai.db.elephantsql.com',
+        'PORT': '',
+    }
 }
 
 
