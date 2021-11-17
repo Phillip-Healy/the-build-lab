@@ -2,7 +2,7 @@
 
 {% block content %}
 {% load static %}
-        <div class="card text-center">
+        <div class="card text-center  col-lg-8 sm-12">
             <div class="card-header">
               Welcome To The Build Lab
             </div>
@@ -27,7 +27,7 @@
             </div>
           </div>
 
-          <div class="card-group">
+          <div class="card-group col-lg-4 sm-12">
             <div class="card">
               <img src="{% static 'images/obelisk.jpg' %}" class="card-img-top" alt="Obelisk the tormentor">
               <div class="card-body">
@@ -40,7 +40,7 @@
                 <a class="call-to-action" href="{% url 'news' %}">Find Out More</a>
               </div>
             </div>
-            <div class="card">
+            <div class="card col-lg-4 sm-12">
               <img src="{% static 'images/SlifertheSkyDragon-OW.png' %}" class="card-img-top" alt="Slifer The Sky Dragon">
               <div class="card-body">
                 <h5 class="card-title">Registered Free User</h5>
@@ -52,7 +52,7 @@
                 <a class="call-to-action" href="{% url 'games' %}">Check it out!</a>
               </div>
             </div>
-            <div class="card">
+            <div class="card col-lg-4 sm-12">
               <img src="{% static 'images/winged-dragon-of-ra.jpg' %}" class="card-img-top" alt="Winged Dragon of Ra">
               <div class="card-body">
                 <h5 class="card-title">Premium User</h5>
