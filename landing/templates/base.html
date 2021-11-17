@@ -52,11 +52,13 @@
         </div>
     </nav>
 
-    <div id="content-wrapper" class="container col-6">
+    <div id="content-wrapper" class="container">
+        <div class="row">
         <br>
-        {% block content %}
+            {% block content %}
 
-        {% endblock content %}
+            {% endblock content %}
+        </div>
     </div>
 
     <footer class="page-footer bg-dark" id="footer">
