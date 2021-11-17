@@ -9,7 +9,7 @@
 
 {% for content in contents %}
     <div class="card mb-3">
-        <img src="{{  content.image.url }}" id="premium-img" class="card-img-top" alt="{{ content.name }} image">
+        <img src="{% static 'images/exodia-tech.jpg' %}" id="premium-img" class="card-img-top" alt="{{ content.name }} image">
         <div class="card-body">
         <h5 id="premium-title" class="card-title"><strong>{{ content.name }}</strong></h5>
         <hr>

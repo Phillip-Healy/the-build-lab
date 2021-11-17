@@ -293,6 +293,8 @@ I found this Font to be clean and clear at all font-weights, which is what I wan
 
 ![Screenshot of error](buildlab/buildfiles/screenshots/heroku-error-4.png "heroku not working")
 
+- Had MAJOR issues with deployement, had to open ports and expose passwords and keys that I'd never do in production. This was to eliminate things one at a time. I have rolled every key and password and made everything secure again.
+
 
 ## Deployment
 
