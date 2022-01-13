@@ -4,9 +4,13 @@ The Build Lab is a website for people to come and learn about various deck build
 
 For this project I thought a site centered around my love of card games, showing off some free advice and entertaining opinions on the games that are out there, as well as some content locked behind a paywall for more serious enthusiasts would be perfect.
 
-At a certain point I realised my scope and content had gotten bloated and many things were not working. I tried to go to previous points in the version control and nothing ever felt right. I started again and used what I could to rebuild and get to a much cleaner more planned and directly designed place. This was a difficult and stressful desision, but I feel this paid off. I stuck with the same repo to preserve record of the work I had put in.
+At a certain point I realised my scope and content had gotten bloated and many things were not working. I tried to go to previous points in the version control and nothing ever felt right. I started again and used what I could to rebuild and get to a much cleaner more planned and directly designed place. This was a difficult and stressful desision, but I felt this would pay off. I stuck with the same repo to preserve record of the work I had put in.
 
-I went into this with so little time for many reasons, but worked myself to the bone to get it done and have something I can be proud of.
+I went into this with so little time for many reasons; family, new job, struggling with balancing depression/anxiety medications and newly diagnosed ADHD medications. But I worked myself to the bone to get it done and have something I can be proud of. 
+
+This was ultimately not possible for me, and I'm sorry to submit work that will fail.
+
+I gave it everything I had and while I regret not having gotten help sooner this was everything I could do as I am now. Thank you to code institute and the ETB for the opportunity.
 
 
 ## Brief
